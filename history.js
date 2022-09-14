@@ -27,6 +27,7 @@ function displayHistory() {
 
   previousTests.forEach((test) => {
     const newRow = document.createElement("div");
+    newRow.classList.add("history-responsive");
     newRow.classList.add("card");
 
     newRow.innerHTML = `

@@ -118,6 +118,13 @@ const start = () => {
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
+
+      // var myDate = new Date();
+      // var hour = myDate.getHours();
+      // var minute = myDate.getMinutes(); 
+      // var seconds = myDate.getSeconds();
+      // console.log(`${seconds}`);
+
     }
     count--;
   }, 1000);
@@ -132,6 +139,7 @@ displayHistory();
 // Show typing time spent
 setInterval(() => {
   const currentTime = new Date().getTime();
+
   const timeSpent = (currentTime - startTime) / 1000;
 
 
